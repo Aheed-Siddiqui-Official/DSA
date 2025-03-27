@@ -2,6 +2,8 @@
 #include <climits>
 using namespace std;
 
+                                        // CHANGE ARRAY
+
 // void changeArr(int arr[], int size) {
 //     cout << "in function\n";
 //     for(int i = 0 ; i < size ; i++){
@@ -9,15 +11,75 @@ using namespace std;
 //     }
 // }
 
-int linearSearch(int array[] , int size, int find) {
-    for (int i = 0 ; i < size ; i++) {
-        if (array[i] == find)
-        {
-            return i;
-        }
-    }
-    return -1;
-}
+                                        // LINEAR SEARCH
+
+// int linearSearch(int array[] , int size, int find) {
+//     for (int i = 0 ; i < size ; i++) {
+//         if (array[i] == find)
+//         {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+                                        // REVERSE ARRAY + DRY RUN CODE
+
+        
+    //                0     3
+    //                1 2 3 4      4
+    // void reverseArray(int array[], int size) {
+    //     int start = 0;
+    //     int end = size - 1; // 4 - 1
+
+    //     while (start < end) { // (0 < 3) // (1 < 2) // (2 < 1 loop break)
+    //         swap(array[start], array[end]); // (1, 4 => 4, 1) // (2, 3 => 3, 2)
+    //             start++; // (1) // (2)
+    //             end--; // (2) // (1)
+    //     }
+        
+    // }
+
+                                        // WAF to calculate sum & product of all numbers in an array.
+                            
+    // int sumProductofArray(int array[], int size) {
+    //     int sum = 0;
+    //     int product = 1;
+
+    //     for (int i = 0 ; i < size ; i++) {
+    //         sum += array[i];
+    //         product *= array[i]; 
+            
+    //     }
+        
+    //     return {sum, product}; 
+    // }
+
+                                        // WAF to swap the max & min number of an array.
+
+
+    // void swapMaxMin(int array[], int size) {
+    //     int max = 0;
+    //     int min = 0;
+
+    //     for (int i = 1 ; i < size ; i++) {
+    //         if (array[i] > array[max]) {
+    //             max = i;
+    //         }
+    //     }
+
+    //     for (int j = 1 ; j < size ; j++) {
+    //         if (array[j] < array[min]) {
+    //             min = j;
+    //         }
+            
+    //     }
+    //     swap(array[max], array[min]);
+    // }
+
+                                        // WAF to print all the unique values in an array.
+
+                                        // WAF to print intersection of 2 arrays.
 
 int main() {
 
@@ -137,30 +199,106 @@ int main() {
 
                                         // LINEAR SEARCH
 
-    int size;
-    cout << "Enter size of array = ";
-    cin >> size;
+    // int size;
+    // cout << "Enter size of array = ";
+    // cin >> size;
 
-    int array[size];
+    // int array[size];
 
-    int find;
-    cout << "Value to find = ";
-    cin >> find;
+    // int find;
+    // cout << "Value to find = ";
+    // cin >> find;
 
-    for (int i = 0 ; i < size; i++)
-    {
-        cin >> array[i];
-    }
+    // for (int i = 0 ; i < size; i++)
+    // {
+    //     cin >> array[i];
+    // }
 
-    for (int i = 0 ; i < size ; i++)
-    {
-        cout << array[i] << " ";
-    }
+    // for (int i = 0 ; i < size ; i++)
+    // {
+    //     cout << array[i] << " ";
+    // }
     
-    cout << endl;
+    // cout << endl;
 
-    cout << "Index At = " << linearSearch(array, size ,find) << endl;
+    // cout << "Index At = " << linearSearch(array, size ,find) << endl;
 
+                                        // DAY 3
+
+                                        // REVERSE ARRAY
+
+    // int size;
+    // cout << "Enter size of array = ";
+    // cin >> size;
+
+    // int array[size];
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cin >> array[i];
+    // }
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cout << array[i] << " ";
+    // }
     
+    // cout << endl;
+
+    // reverseArray(array, size);
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cout << array[i] << " ";
+    // }
+    
+
+
+                                        // WAF to calculate sum & product of all numbers in an array.
+
+    // int size;
+    // cout << "Enter size of array = ";
+    // cin >> size;
+
+    // int array[size];
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cin >> array[i];
+    // }
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cout << array[i] << " ";
+    // }
+
+    // cout << endl;
+
+    // cout << sumProductofArray(array, size);
+
+                                        // WAF to swap the max & min number of an array.
+
+    // int size;
+    // cout << "Enter size of array = ";
+    // cin >> size;
+
+    // int array[size];
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cin >> array[i];
+    // }
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cout << array[i] << " ";
+    // }
+
+    // cout << endl;
+
+    // swapMaxMin(array, size);
+
+    // for (int i = 0 ; i < size ; i++) {
+    //     cout << array[i] << " ";
+    // }
+    //  cout << endl;
+
+                                        // WAF to print all the unique values in an array.
+
+                                        // WAF to print intersection of 2 arrays.
+
     return 0;
 }
