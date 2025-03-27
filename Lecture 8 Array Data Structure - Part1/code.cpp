@@ -1,5 +1,23 @@
 #include <iostream>
+#include <climits>
 using namespace std;
+
+// void changeArr(int arr[], int size) {
+//     cout << "in function\n";
+//     for(int i = 0 ; i < size ; i++){
+//         arr[i] = 2 * arr[i];
+//     }
+// }
+
+int linearSearch(int array[] , int size, int find) {
+    for (int i = 0 ; i < size ; i++) {
+        if (array[i] == find)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
 
 int main() {
 
@@ -25,28 +43,124 @@ int main() {
     //     cout << marks[i] << endl;
     // }
 
-    int size = 5;
-    int marks[size];
+    // int size = 5;
+    // int marks[size];
 
-    for(int i = 0 ; i < size ; i++) {
-        cin >> marks[i];
+    // for(int i = 0 ; i < size ; i++) {
+    //     cin >> marks[i];
+    // }
+
+    // for(int i = 0 ; i < size ; i++) {
+    //     cout << marks[i] << endl;
+    // }
+
+                                        // DAY 2
+
+                                        // FINDING SMALLEST NUMBER
+
+    // int size;
+    // cout << "Enter size of array = ";
+    // cin >> size;
+
+    // int array[size];
+
+    // int smallest = INT_MAX;
+
+    // int index = 0;
+
+    // for (int i = 0 ; i < size ; i++)
+    // {
+    //     cin >> array[i];
+    // }
+
+    // for (int i = 0;  i < size ; i++)
+    // {
+    //     cout << array[i] << " ";
+    // }
+    
+    // for (int j = 0 ; j < size ; j++)
+    // {
+    //     if (array[j] < smallest)
+    //     {
+    //         smallest = array[j];
+    //         index = j;
+    //     }   
+    // }
+    // cout << endl;
+    // cout << "Smallest value = " << smallest << endl;
+    // cout << "Index At = " << index;
+
+                                        // FINDING LARGEST NUMBER
+
+    // int size;
+    // cout << "Enter size of array = ";
+    // cin >> size;
+
+    // int array[size];
+
+    // int largest = INT_MIN;
+
+    // int index = 0;
+
+    // for(int i = 0 ; i < size ; i++) {
+    //     cin >> array[i]; 
+    // }
+
+    // for (int i = 0 ; i < size ; i++)
+    // {
+    //     cout << array[i] << " ";
+    // }
+
+    // for(int i = 0 ; i < size ; i++) {
+    //     if (array[i] > largest)
+    //     {
+    //         largest = array[i];
+    //         index = i;
+    //     }
+    // }
+    // cout << endl;
+    // cout << "Largest value = " << largest << endl;
+    // cout << "Index At = " << index;
+
+                                        // PASS BY REFERENCE
+    
+    // int arr[] = {1, 2, 3};
+
+    // changeArr(arr, 3);
+
+    // cout << "in main\n";
+    // for(int i = 0 ; i < 3 ; i++){ // 2, 4, 6
+    //     cout << arr[i] << " ";
+    // }
+
+    // cout << endl;
+
+                                        // LINEAR SEARCH
+
+    int size;
+    cout << "Enter size of array = ";
+    cin >> size;
+
+    int array[size];
+
+    int find;
+    cout << "Value to find = ";
+    cin >> find;
+
+    for (int i = 0 ; i < size; i++)
+    {
+        cin >> array[i];
     }
 
-    for(int i = 0 ; i < size ; i++) {
-        cout << marks[i] << endl;
+    for (int i = 0 ; i < size ; i++)
+    {
+        cout << array[i] << " ";
     }
+    
+    cout << endl;
 
+    cout << "Index At = " << linearSearch(array, size ,find) << endl;
 
-
-
-
-
-
-
-
-
-
-
-
+    
     return 0;
 }
