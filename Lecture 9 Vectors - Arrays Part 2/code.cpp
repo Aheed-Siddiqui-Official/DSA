@@ -96,7 +96,75 @@ int main() {
     // cout << vec.size() << endl; // 5
     // cout << vec.capacity() << endl;  // 8
 
-      
+                                            // PRACTICE QUESTIONS LEET CODE
+
+                                            // SINGLE NUMBER (SOLVE WITH LINEAR RUNTIME COMPLEXITY MEANS ONE LOOP)
+                                        
+    // vector<int> vec = {1, 2, 3, 4, 3, 2, 1};
+
+    // cout << "Unique Number = " << singleNumber(vec);
+
+                                            // LINEAR SEARCH
+
+    // int size;
+    // cout << "Enter size of array = ";
+    // cin >> size;
+
+    // int findIndex;
+
+    // vector<int> vec = {size};
+
+    // for(int i = 0 ; i < size ; i++) {
+    //     cin >> vec[i];
+    // }
+
+    // for (int j = 0 ; j < size; j++) {
+    //     cout << vec[j] << " ";
+    // }
+
+    // int find;
+    // cout << "\nEnter number to find = ";
+    // cin >> find;
+
+    // for (int k = 0 ; k < size ; k++) {
+    //     if(vec[k] == find) {
+    //         findIndex = k;
+    //     }
+    // }
+
+    // cout << "The index of given no = " << findIndex;
+
+                                            // REVERSE VECTOR ARRAY
+
+    int size;
+    cout << "Enter size of array = ";
+    cin >> size;
+
+    int findIndex;
+
+    vector<int> vec = {size};
+
+    for(int i = 0 ; i < size ; i++) {
+        cin >> vec[i];
+    }
+
+    for (int j = 0 ; j < size; j++) {
+        cout << vec[j] << " ";
+    }
+
+    cout << endl;
+
+    reverseVector(vec, size);
+
+    for (int i = 0 ; i < size ; i++) {
+        cout << vec[i] << " ";
+    }
+    
+    cout << endl;
+    cout << vec.size();
+
+
+    
 
     return 0;
 }
