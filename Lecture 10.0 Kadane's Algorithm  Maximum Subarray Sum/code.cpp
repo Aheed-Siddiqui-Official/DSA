@@ -36,19 +36,19 @@ int main() {
 
                                         // PROGRAM TO FIND SUM OF MAX SUB ARRAY Kadane's Algorithm LEETCODE 53
 
-    int currSum = 0;
-    int maxSum = INT_MIN;
+    // int currSum = 0;
+    // int maxSum = INT_MIN;
 
-    for(int i = 0 ; i < n ; i++) {
-        currSum += arr[i];
-        maxSum = max(currSum, maxSum);
+    // for(int i = 0 ; i < n ; i++) {
+    //     currSum += arr[i];
+    //     maxSum = max(currSum, maxSum);
 
-        if (currSum < 0) {
-            currSum = 0;
-        }
-    }
+    //     if (currSum < 0) {
+    //         currSum = 0;
+    //     }
+    // }
 
-    cout << "MAX SUB ARRAY = " << maxSum << endl;
+    // cout << "MAX SUB ARRAY = " << maxSum << endl;
 
                 
 
