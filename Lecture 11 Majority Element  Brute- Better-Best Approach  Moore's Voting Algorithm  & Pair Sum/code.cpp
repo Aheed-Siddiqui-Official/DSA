@@ -29,6 +29,7 @@ using namespace std;
             int i = 0;
             int j = size - 1;
 
+            while (i < j) {
 
     }
 
