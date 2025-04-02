@@ -34,6 +34,8 @@ using namespace std;
 
                 if (pairSum > target) {
                     j--;
+                } else if (pairSum < target) {
+                    i++;
                 } 
     }
 
