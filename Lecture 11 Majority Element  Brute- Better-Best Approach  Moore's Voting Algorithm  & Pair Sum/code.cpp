@@ -22,7 +22,9 @@ using namespace std;
     //     return ans;
     //}
 
-  
+                                        // PAIR SUM OPTIMIZED APPROACH
+
+
 
 int main() {
 
@@ -51,9 +53,11 @@ int main() {
     // vector<int> ans = pairSum(vec, targetSum, size);
     // cout << ans[0] << ", " << ans[1];
 
-                                       
+                                        // PAIR SUM OPTIMIZED APPROACH
     
-  
+    vector<int> ans = pairSum(vec, targetSum, size);
+    cout << ans[0] << ", " << ans[1];
+    
     
 
 
