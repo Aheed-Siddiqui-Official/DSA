@@ -30,6 +30,7 @@ using namespace std;
             int j = size - 1;
 
             while (i < j) {
+                int pairSum = vec[i] + vec[j];
 
     }
 
