@@ -25,6 +25,7 @@ using namespace std;
                                         // PAIR SUM OPTIMIZED APPROACH
 
      vector<int> pairSum(vector<int> vec, int size, int target) {
+        vector<int> ans;
 
     }
 
