@@ -36,7 +36,12 @@ using namespace std;
                     j--;
                 } else if (pairSum < target) {
                     i++;
-                } 
+                } else {
+                    ans.push_back(i);
+                    ans.push_back(j);
+                    return ans;
+                }
+
     }
 
 int main() {
