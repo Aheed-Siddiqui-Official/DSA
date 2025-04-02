@@ -32,6 +32,9 @@ using namespace std;
             while (i < j) {
                 int pairSum = vec[i] + vec[j];
 
+                if (pairSum > target) {
+                    j--;
+                } 
     }
 
 int main() {
