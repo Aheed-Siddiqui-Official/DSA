@@ -27,6 +27,8 @@ using namespace std;
      vector<int> pairSum(vector<int> vec, int size, int target) {
         vector<int> ans;
             int i = 0;
+            int j = size - 1;
+
 
     }
 
