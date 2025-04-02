@@ -41,7 +41,9 @@ using namespace std;
                     ans.push_back(j);
                     return ans;
                 }
-
+                
+            }
+            return ans;
     }
 
 int main() {
