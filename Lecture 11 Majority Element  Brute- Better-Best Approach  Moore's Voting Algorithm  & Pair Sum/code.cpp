@@ -68,7 +68,29 @@ using namespace std;
     //     return -1;
     // }
 
+                                        // MAJORITY ELEMENT OPTIMIZED
 
+    // int majorityElement(vector<int>& vec, int size) {
+    
+    //     sort(vec.begin(), vec.end());
+
+    //     int freq = 1;
+    //     int ans = vec[0];
+
+    //     for (int i = 0 ; i < size ; i++) {
+    //         if(vec[i] == vec[i - 1]) {
+    //             freq++;
+    //         } else {
+    //             freq = 1;
+    //             ans = vec[i];
+    //         }
+
+    //         if(freq > size / 2) {
+    //             return ans;
+    //         }
+    //     }
+    //     return ans;
+    // }
 
                                         //MOORE'S VOTING ALGORITHM
 
