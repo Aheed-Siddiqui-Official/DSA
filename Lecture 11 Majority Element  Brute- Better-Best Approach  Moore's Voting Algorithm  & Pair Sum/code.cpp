@@ -49,24 +49,6 @@ using namespace std;
     // }
 
 
-                                        // MAJORITY ELEMENT BRUTE FORCE
-
-    // int majorityElement(vector<int>& vec, int size) {
-
-    //     for(int val : vec) {
-    //         int freq = 0;
-
-    //         for(int el : vec) {
-    //             if (el == val) {
-    //                 freq++;
-    //             }
-    //         }
-    //         if(freq > size/2) {
-    //             return val;
-    //         }
-    //     }
-    //     return -1;
-    // }
 
                                         // MAJORITY ELEMENT OPTIMIZED
 
