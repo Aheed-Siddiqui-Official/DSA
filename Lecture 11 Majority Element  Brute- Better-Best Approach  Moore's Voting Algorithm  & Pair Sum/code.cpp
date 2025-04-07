@@ -49,30 +49,26 @@ using namespace std;
     // }
 
 
-
-                                        // MAJORITY ELEMENT OPTIMIZED
+                                        // MAJORITY ELEMENT BRUTE FORCE
 
     // int majorityElement(vector<int>& vec, int size) {
-    
-    //     sort(vec.begin(), vec.end());
 
-    //     int freq = 1;
-    //     int ans = vec[0];
+    //     for(int val : vec) {
+    //         int freq = 0;
 
-    //     for (int i = 0 ; i < size ; i++) {
-    //         if(vec[i] == vec[i - 1]) {
-    //             freq++;
-    //         } else {
-    //             freq = 1;
-    //             ans = vec[i];
+    //         for(int el : vec) {
+    //             if (el == val) {
+    //                 freq++;
+    //             }
     //         }
-
-    //         if(freq > size / 2) {
-    //             return ans;
+    //         if(freq > size/2) {
+    //             return val;
     //         }
     //     }
-    //     return ans;
+    //     return -1;
     // }
+
+
 
                                         //MOORE'S VOTING ALGORITHM
 
