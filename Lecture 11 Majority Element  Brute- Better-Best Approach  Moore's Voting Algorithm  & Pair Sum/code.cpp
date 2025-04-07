@@ -92,6 +92,8 @@ using namespace std;
     //     return ans;
     // }
 
+                                        //MOORE'S VOTING ALGORITHM
+
     int majorityElement(vector<int>& vec, int size) {
         int freq = 0;
         int ans;
