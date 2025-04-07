@@ -92,38 +92,7 @@ using namespace std;
     //     return ans;
     // }
 
-                                        //MOORE'S VOTING ALGORITHM
 
-    int majorityElement(vector<int>& vec, int size) {
-        int freq = 0;
-        int ans;
-
-        for(int i = 0 ; i < size ; i++) {
-            if(freq == 0){
-                ans = vec[i];
-            } if (ans == vec[i]) {
-                freq++;
-            } else {
-                freq--;
-            }
-        }
-
-        int count = 0;
-        for(int val : vec) {
-            if(val == ans) {
-                count++;
-            }
-        }
-
-        if(count > size / 2) {
-            return ans;
-        } else {
-            return -1;
-        }
-
-
-        return ans;
-    }
 
 
 
