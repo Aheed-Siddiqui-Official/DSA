@@ -29,7 +29,15 @@ int main() {
 
                                         // O(n!) => NON COMMON (RECURSION)
 
+                                        // PRIME NUMBER PROBLEM
 
+    for (int i = 2 ; i * i <= n; i++) {
+        if (n % i == 0) {
+            cout << "Non prime";
+            break;
+        }  
+    }
+    
 
     return 0;
 }
