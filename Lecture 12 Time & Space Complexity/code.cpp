@@ -19,8 +19,17 @@ int main() {
     }
     // cout << fact;
     
- 
-    
+                                        // O(n^2 & n^3) => (BUBBLE SORT / PATTERNS / SUB ARRAYS)
+
+                                        // O(logn) => (BINARY SEARCH)
+
+                                        // O(nlogn) => (MERGE SORT / QUICK SORT / GREEDY ALGOS)
+
+                                        // O(2^n) => (EXPONENTIAL)
+
+                                        // O(n!) => NON COMMON (RECURSION)
+
+
 
     return 0;
 }
