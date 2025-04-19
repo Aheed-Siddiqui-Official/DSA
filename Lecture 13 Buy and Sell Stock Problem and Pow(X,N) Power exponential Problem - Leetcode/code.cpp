@@ -31,7 +31,17 @@ int main() {
 
                                         // BUY AND SELL PROBLEM => LEET CODE 121
 
+    int price[] = {7, 1, 5, 3, 6, 4};
 
+    int maxProfit = 0;
+    int bestBuy = price[0];
+    
+    for(int i = 1 ; i < price.size() ; i++) {
+        if (price[i] > bestBuy) {
+            maxProfit = max(maxProfit, price[i] - bestBuy);
+        }
+        bestBuy = min(bestBuy, price[i]);
+    }
 
 
 
