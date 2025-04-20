@@ -16,6 +16,20 @@ int main() {
     //     }
     // }
 
+    int lp = 0;
+    int rp = vec.size() - 1;
+    int maxWater = 0;
+
+    while (lp < rp) {
+        int w = rp - lp;
+        int h = min(vec[rp], vec[lp]);
+        int currWater = w * h;
+        maxWater = max(maxWater, currWater);
+
+        vec[lp] < vec[rp] ? lp++ : rp--;
+    }
+
+    cout << "Max Water = " << maxWater;
     
 
 
