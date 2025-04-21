@@ -134,7 +134,21 @@ int main() {
     //     }
     // }
 
+                                        // AVL TREE
 
+                                        // Example usage
+    Node* root = nullptr;
+
+                                        // Insert nodes
+    int values[] = {30, 20, 40, 10, 25, 50, 5};
+    for (int val : values) {
+        root = insert(root, val);
+    }
+
+                                        // Print inorder traversal
+    cout << "Inorder traversal of AVL Tree: ";
+    inorder(root);
+    cout << endl;
 
 
     
