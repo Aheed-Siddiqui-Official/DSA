@@ -10,7 +10,7 @@ int main() {
     // vector<int> ans(vec.size(), 1);
 
     // for(int i = 0 ; i < vec.size() ; i++) {
-
+    //     for(int j = 0 ; j < vec.size() ; j++) {
 
 
     
