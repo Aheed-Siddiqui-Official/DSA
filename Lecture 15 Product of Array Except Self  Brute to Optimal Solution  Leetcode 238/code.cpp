@@ -12,6 +12,8 @@ int main() {
     // for(int i = 0 ; i < vec.size() ; i++) {
     //     for(int j = 0 ; j < vec.size() ; j++) {
     //         if(i != j) {
+    //             ans[i] *= vec[j];
+
 
 
     
