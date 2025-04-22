@@ -31,7 +31,17 @@ int main() {
     // cout << &ptr << endl;
     // cout << parPtr;
 
- 
+                                        // DEREFERENCING OPERATOR
+
+    // cout << *(&a) << endl;
+    // cout << *(ptr) << endl;
+
+    // cout << *(parPtr) << endl;
+    // cout << *(&ptr);
+
+    // cout << **(parPtr);
+
+
     
     return 0;
 }
