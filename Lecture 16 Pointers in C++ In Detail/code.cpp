@@ -41,6 +41,27 @@ int main() {
 
     // cout << **(parPtr);
 
+                                        // NULL POINTER
+
+    // int *ptr = NULL;
+    // cout << *ptr;
+
+    // int a = 5;
+    // int *p = &a;
+    // int **parPtr = &p;
+    
+    // cout << *p << endl;
+    // cout << **parPtr << endl;
+    // cout << p << endl;
+    // cout << *parPtr << endl;
+
+                                        // PASS BY REFERENCE
+
+    // int a = 10;
+    // changeA(&a);
+
+    // cout << a;
+
 
     
     return 0;
