@@ -21,7 +21,17 @@ int main() {
 
     // cout << ptr, &price;
 
+                                        // POINTER TO POINTER
 
+    // int a = 10;
+    // int *ptr = &a;
+
+    // int **parPtr = &ptr;
+
+    // cout << &ptr << endl;
+    // cout << parPtr;
+
+ 
     
     return 0;
 }
