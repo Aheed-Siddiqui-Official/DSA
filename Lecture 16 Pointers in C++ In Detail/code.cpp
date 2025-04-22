@@ -105,7 +105,18 @@ int main() {
     
     // cout << ptr2 - ptr;
 
+    // COMPARISION OF POINTERS
 
+                                        // QUESTION
+
+    int arr[] = {1, 2, 3, 4, 5};
+    int *ptr = arr;
+
+    cout << *ptr << endl;
+    cout << *(ptr+1) << endl;
+    cout << (*ptr+2) << endl;
+    ptr++;
+    cout << *ptr;
     
     return 0;
 }
