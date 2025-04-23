@@ -15,6 +15,17 @@ int binarySearch(vector<int> arr, int tar) {
         // THIS IS AN OPTIMIZED FORMULA TO AVOID LIMIT EXCEED OF INT WHEN INT MAX USED ON PLATFORMS
         int mid = st + (end - st)/2;
 
+        if(tar > arr[mid]) {
+            st = mid + 1;
+        } else if (tar < arr[mid]) {
+            end = mid - 1; 
+        } else{
+            return mid;
+        }
+    }
+    return -1;
+}
+
 
 int main() {
 
