@@ -13,6 +13,16 @@ int rotatedSortedArray(vector<int> &vec, int target) {
             return mid;
         } 
 
+                                                // LEFT SORTED
+
+        if(vec[st] <= vec[mid]) {
+            if(vec[st] <= target && target <= vec[mid]) {
+                end = mid - 1;
+            } else {
+                st = mid + 1;
+            }
+
+
 int main() {
 
     int target;
