@@ -2,7 +2,16 @@
 #include <vector>
 using namespace std;
 
+int rotatedSortedArray(vector<int> &vec, int target) {
+    int st = 0;
+    int end = vec.size() - 1;
+    
+    while(st <= end){
+        int mid = st + (end - st) / 2;
 
+        if(target == vec[mid]) {
+            return mid;
+        } 
 
 int main() {
 
