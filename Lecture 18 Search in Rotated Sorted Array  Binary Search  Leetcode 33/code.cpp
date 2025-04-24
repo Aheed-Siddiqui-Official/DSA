@@ -22,6 +22,18 @@ int rotatedSortedArray(vector<int> &vec, int target) {
                 st = mid + 1;
             }
 
+                                                    // RIGHT SORTED
+                                        
+        } else {
+            if(vec[mid] <= target && target <= vec[end]) {
+                st = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+    }
+    return -1;
+}
 
 int main() {
 
