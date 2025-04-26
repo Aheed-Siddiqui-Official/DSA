@@ -8,7 +8,15 @@ int singleElemSortedArray(vector<int> &vec) {
 
     if (end == 0) return vec[0];
 
-    
+    while(st <= end) {
+        int mid = st + (end - st) / 2;
+
+        if(mid == 0 && vec[0] != vec[1]) return vec[mid];
+        if(mid == end-1 && vec[end-1] != vec[end-2]) return vec[mid];
+
+        
+    }
+    return -1;
 }
 
 
