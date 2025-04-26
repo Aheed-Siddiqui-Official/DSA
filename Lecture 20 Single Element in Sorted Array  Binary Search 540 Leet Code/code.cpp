@@ -2,7 +2,14 @@
 #include <vector>
 using namespace std;
 
+int singleElemSortedArray(vector<int> &vec) {
+    int st = 0;
+    int end = vec.size() - 1;
 
+    if (end == 0) return vec[0];
+
+    
+}
 
 
 
