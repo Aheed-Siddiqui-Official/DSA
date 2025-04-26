@@ -18,6 +18,18 @@ int singleElemSortedArray(vector<int> &vec) {
             return vec[mid];
         }
         
+        // Odd
+
+        if(mid % 2 == 0) {
+            if(vec[mid - 1] == vec[mid]) {
+                end = mid - 1;
+            } else {
+                st = mid + 1;
+            }
+        } 
+        
+        // Even
+
         
     }
     return -1;
