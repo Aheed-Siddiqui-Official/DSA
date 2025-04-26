@@ -30,7 +30,13 @@ int singleElemSortedArray(vector<int> &vec) {
         
         // Even
 
-        
+        else {
+            if(vec[mid - 1] == vec[mid]) {
+                st = mid + 1;
+            } else {
+                end = mid + 1;
+            }
+        }
     }
     return -1;
 }
