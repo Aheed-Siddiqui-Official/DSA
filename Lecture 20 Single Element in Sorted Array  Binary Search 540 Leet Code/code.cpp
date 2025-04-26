@@ -14,6 +14,10 @@ int singleElemSortedArray(vector<int> &vec) {
         if(mid == 0 && vec[0] != vec[1]) return vec[mid];
         if(mid == end-1 && vec[end-1] != vec[end-2]) return vec[mid];
 
+        if(vec[mid] != vec[mid - 1] && vec[mid] != vec[mid + 1]) {
+            return vec[mid];
+        }
+        
         
     }
     return -1;
