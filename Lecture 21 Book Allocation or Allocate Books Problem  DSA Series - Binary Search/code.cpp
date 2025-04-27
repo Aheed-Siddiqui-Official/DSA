@@ -21,7 +21,13 @@ bool isValid(vector<int> &arr,int n,int m, int maxAllowedPages) { //O(n)
 }
 
 
+int allocateBooks(vector<int> &arr, int n, int m) { //O(logN * n) Time Complexity
+    if(m > n) {
+        return -1;
+    }
 
+   
+}
 
 int main() {
     vector<int> arr = {2, 1, 3, 4};
