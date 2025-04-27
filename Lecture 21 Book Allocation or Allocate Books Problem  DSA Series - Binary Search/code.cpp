@@ -2,6 +2,14 @@
 #include <vector>
 using namespace std;
 
+bool isValid(vector<int> &arr,int n,int m, int maxAllowedPages) { //O(n)
+    int stu = 1, pages = 0;
+
+    for(int i = 0 ; i < n ; i++) {
+        if(arr[i] > maxAllowedPages) {
+            return false;
+        }
+
 
 
 int main() {
