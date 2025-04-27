@@ -10,6 +10,17 @@ bool isValid(vector<int> &arr,int n,int m, int maxAllowedPages) { //O(n)
             return false;
         }
 
+        if(pages + arr[i] <= maxAllowedPages) {
+            pages += arr[i];
+        } else {
+            stu++;
+            pages = arr[i];
+        }
+    }
+    return stu > m ? false : true;
+}
+
+
 
 
 int main() {
