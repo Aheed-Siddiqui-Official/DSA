@@ -26,7 +26,13 @@ int allocateBooks(vector<int> &arr, int n, int m) { //O(logN * n) Time Complexit
         return -1;
     }
 
-   
+    int sum = 0;
+
+    for(int i = 0 ; i < n ; i++) { //O(n)
+        sum += arr[i];
+    }
+
+    
 }
 
 int main() {
