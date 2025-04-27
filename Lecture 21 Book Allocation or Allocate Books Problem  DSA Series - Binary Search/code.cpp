@@ -35,7 +35,16 @@ int allocateBooks(vector<int> &arr, int n, int m) { //O(logN * n) Time Complexit
     int st = 0, end = sum;
     int ans = -1;
 
-    
+    while(st <= end) { 
+        int mid = st + (end-st)/2;
+
+        if(isValid(arr, n, m, mid)) {
+            ans = mid;
+            end = mid - 1;
+        } else{
+            st = mid + 1;
+        }
+    }
 }
 
 int main() {
