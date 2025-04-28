@@ -33,6 +33,8 @@ int minTimeToPaint(vector<int> &arr, int n, int m) {
         if(isPossible(arr, n, m, mid)) {
             ans = mid;
             end = mid - 1;
+        } else {
+            st = mid + 1;
         }
     }
     return ans;
