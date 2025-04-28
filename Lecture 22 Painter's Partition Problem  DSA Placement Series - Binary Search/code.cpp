@@ -27,7 +27,11 @@ int minTimeToPaint(vector<int> &arr, int n, int m) {
 
     int st = maxVal, end = sum, ans = -1;
 
+    while(st <= end) { //(Olog(sum) * n)
+        int mid = st + (end-st)/2;
 
+        
+    }
     return ans;
 }
 
