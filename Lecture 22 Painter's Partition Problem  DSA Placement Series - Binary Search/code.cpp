@@ -17,7 +17,12 @@ bool isPossible(vector<int> &arr, int n, int m, int maxAllowedLimit) { //O(n)
     return painters <= m;
 } 
 
+int minTimeToPaint(vector<int> &arr, int n, int m) {
+    int sum = 0, maxVal = INT_MIN;
 
+    
+    return ans;
+}
 
 int main() {
     vector <int> arr = {30, 40, 60, 70, 100};
