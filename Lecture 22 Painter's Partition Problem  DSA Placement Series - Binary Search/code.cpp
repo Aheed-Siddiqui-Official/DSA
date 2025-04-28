@@ -3,6 +3,9 @@
 #include <vector>
 using namespace std;
 
+bool isPossible(vector<int> &arr, int n, int m, int maxAllowedLimit) { //O(n)
+    int painters = 1, time = 0;
+
 
 
 int main() {
