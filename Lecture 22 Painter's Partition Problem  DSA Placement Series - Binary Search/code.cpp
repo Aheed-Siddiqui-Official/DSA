@@ -30,7 +30,10 @@ int minTimeToPaint(vector<int> &arr, int n, int m) {
     while(st <= end) { //(Olog(sum) * n)
         int mid = st + (end-st)/2;
 
-        
+        if(isPossible(arr, n, m, mid)) {
+            ans = mid;
+            end = mid - 1;
+        }
     }
     return ans;
 }
