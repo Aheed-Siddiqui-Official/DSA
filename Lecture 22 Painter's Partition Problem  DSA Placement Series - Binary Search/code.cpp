@@ -6,6 +6,17 @@ using namespace std;
 bool isPossible(vector<int> &arr, int n, int m, int maxAllowedLimit) { //O(n)
     int painters = 1, time = 0;
 
+    for(int i = 0 ; i<n ; i++) {
+        if(time + arr[i] <= maxAllowedLimit) {
+            time += arr[i];
+        } else {
+            painters++;
+            time = arr[i];
+        }
+    }
+    return painters <= m;
+} 
+
 
 
 int main() {
