@@ -25,6 +25,8 @@ int minTimeToPaint(vector<int> &arr, int n, int m) {
         maxVal = max(maxVal, arr[i]);
     }
 
+    int st = maxVal, end = sum, ans = -1;
+
 
     return ans;
 }
