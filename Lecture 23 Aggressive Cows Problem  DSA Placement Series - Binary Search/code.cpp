@@ -12,6 +12,12 @@ bool isPossible(vector<int> &arr, int N, int C, int minAllowedDist) {
             lastStallPos = arr[i];
         }
 
+        if(cows == C) {
+            return true;
+        }
+    }
+    return false;
+}
 
 
 
