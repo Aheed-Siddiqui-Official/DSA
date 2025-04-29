@@ -23,7 +23,11 @@ int getDistance(vector<int> &arr, int N, int C) {
     sort(arr.begin(), arr.end());
     int st = 1, end = arr[N-1] - arr[0], ans = -1;
 
-    
+    while(st <= end) {
+        int mid = st + (end-st) / 2;
+
+        
+    }
     return ans;
 }
 
