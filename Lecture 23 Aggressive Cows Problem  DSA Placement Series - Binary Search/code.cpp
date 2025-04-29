@@ -3,6 +3,15 @@
 #include <algorithm>
 using namespace std;
 
+bool isPossible(vector<int> &arr, int N, int C, int minAllowedDist) {
+    int cows = 1, lastStallPos = arr[0];
+
+    for(int i = 1 ; i<N ; i++) {
+        if(arr[i] - lastStallPos >= minAllowedDist) {
+            cows++;
+            lastStallPos = arr[i];
+        }
+
 
 
 
