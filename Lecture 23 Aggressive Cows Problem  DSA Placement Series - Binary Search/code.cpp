@@ -26,7 +26,10 @@ int getDistance(vector<int> &arr, int N, int C) {
     while(st <= end) {
         int mid = st + (end-st) / 2;
 
-        
+        if(isPossible(arr, N, C, mid)) {
+            ans = mid;
+            st = mid + 1;
+        } 
     }
     return ans;
 }
