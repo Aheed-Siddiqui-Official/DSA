@@ -29,7 +29,9 @@ int getDistance(vector<int> &arr, int N, int C) {
         if(isPossible(arr, N, C, mid)) {
             ans = mid;
             st = mid + 1;
-        } 
+        } else {
+            end = mid - 1;
+        }
     }
     return ans;
 }
