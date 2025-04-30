@@ -33,6 +33,17 @@ using namespace std;
 //     }
 // }
 
+// insertionSort
+
+void insertionSort(int arr[], int n)
+{
+
+    //{1, 5, 3, 7, 6, 9} = 6
+    for (int i = 1; i < n; i++)
+    {
+        int curr = arr[i]; // arr[2] = 3
+        int prev = i - 1;  // 2 - 1 = 1
+
 
 
 int main()
