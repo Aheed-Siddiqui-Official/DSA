@@ -44,6 +44,15 @@ void insertionSort(int arr[], int n)
         int curr = arr[i]; // arr[2] = 3
         int prev = i - 1;  // 2 - 1 = 1
 
+        while (prev >= 0 && arr[prev] > arr[curr]) // T &&  arr[1] = 5 > arr[3] = 3
+        {
+            arr[prev + 1] = arr[prev]; // arr[2] = arr[1] = 5
+            prev--; 
+        }
+        arr[prev + 1] = curr; // arr[0 + 1] = arr[1] = 5
+    }
+}
+
 
 
 int main()
