@@ -13,6 +13,12 @@ using namespace std;
 //                 isSwap = true;
 //             }
 //         }
+//         if(!isSwap) { // for sorted array
+//             return;
+//         }
+//     }
+// }
+
 
 
 int main()
