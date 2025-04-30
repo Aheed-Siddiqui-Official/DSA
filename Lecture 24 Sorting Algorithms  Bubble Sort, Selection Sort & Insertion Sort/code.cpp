@@ -29,6 +29,10 @@ using namespace std;
 //                 smallIndex = j;
 //             }
 //         }
+//         swap(arr[i], arr[smallIndex]);
+//     }
+// }
+
 
 
 int main()
