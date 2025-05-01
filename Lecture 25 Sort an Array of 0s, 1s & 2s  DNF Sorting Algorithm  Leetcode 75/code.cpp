@@ -31,7 +31,17 @@ int main() {
     //     }
     // }
 
-  
+    // int idx = 0;
+
+    // for(int j = 0 ; j<countZero ; j++) {
+    //     nums[idx++] = 0;
+    // }
+
+    // for(int j = 0 ; j<countOne ; j++) {
+    //     nums[idx++] = 1;
+    // }
+
+
 
     return 0;
 }
