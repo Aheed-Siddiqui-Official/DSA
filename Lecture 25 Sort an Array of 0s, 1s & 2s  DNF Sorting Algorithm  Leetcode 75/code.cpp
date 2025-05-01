@@ -41,6 +41,14 @@ int main() {
     //     nums[idx++] = 1;
     // }
 
+    // for(int j = 0 ; j<countTwo ; j++) {
+    //     nums[idx++] = 2;
+    // }
+
+    // for (int x : nums) {
+    //     cout << x << " ";
+    // }
+
 
 
     return 0;
