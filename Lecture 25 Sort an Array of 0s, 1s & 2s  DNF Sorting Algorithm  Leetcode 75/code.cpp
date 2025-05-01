@@ -66,7 +66,9 @@ int main() {
         }
     }
 
-
+    for (int x : nums) {
+        cout << x << " ";
+    }
 
     return 0;
 }
