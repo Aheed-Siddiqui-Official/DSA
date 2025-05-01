@@ -26,7 +26,12 @@ int main() {
     //         countZero++;
     //     } else if (nums[i] == 1) {
     //         countOne++;
-    //     } 
+    //     } else{
+    //         countTwo++;
+    //     }
+    // }
+
+  
 
     return 0;
 }
