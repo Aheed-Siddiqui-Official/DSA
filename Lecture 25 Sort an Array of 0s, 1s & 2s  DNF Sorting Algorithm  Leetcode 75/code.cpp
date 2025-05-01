@@ -58,6 +58,15 @@ int main() {
         if(nums[mid] == 0) {
             swap(nums[low], nums[mid]);
             mid++; low++;
-        } 
+        } else if(nums[mid] == 1) {
+            mid++;
+        } else {
+            swap(nums[high], nums[mid]);
+            high--;
+        }
+    }
+
+
+
     return 0;
 }
