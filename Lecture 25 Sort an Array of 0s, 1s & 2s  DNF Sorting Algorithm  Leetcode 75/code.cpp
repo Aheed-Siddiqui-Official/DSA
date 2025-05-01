@@ -14,7 +14,19 @@ int main() {
     //     cout << nums[i];
     // }
 
+                                        // OPTIMIZED O(n)
 
+    // int countZero = 0;
+    // int countOne = 0;
+    // int countTwo = 0;
+
+    // //O(n)
+    // for(int i = 0 ; i<nums.size() ; i++) {
+    //     if(nums[i] == 0) {
+    //         countZero++;
+    //     } else if (nums[i] == 1) {
+    //         countOne++;
+    //     } 
 
     return 0;
 }
