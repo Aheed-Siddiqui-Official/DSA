@@ -34,6 +34,11 @@ void nextPermutation(vector<int>& A) {
                 break;
             }
         }
+        if(pivot == -1) {
+            reverse(A.begin(), A.end());
+            return;
+        }
+        
         
     }
 
