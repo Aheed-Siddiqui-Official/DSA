@@ -39,6 +39,12 @@ void nextPermutation(vector<int>& A) {
             return;
         }
         
+        for(int i = n-1 ; i>pivot ; i--) {
+            if(A[i] > A[pivot]) {
+                swap(A[i], A[pivot]);
+                break;
+            }
+        }
         
     }
 
