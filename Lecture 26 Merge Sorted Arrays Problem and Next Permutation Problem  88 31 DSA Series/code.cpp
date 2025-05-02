@@ -45,7 +45,10 @@ void nextPermutation(vector<int>& A) {
                 break;
             }
         }
-        
+        int i = pivot+1, j = n-1;
+        while(i<=j) {
+            swap(A[i++], A[j--]);
+        }
     }
 
 
