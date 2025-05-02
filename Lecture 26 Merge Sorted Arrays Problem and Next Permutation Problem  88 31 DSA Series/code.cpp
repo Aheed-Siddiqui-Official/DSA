@@ -14,7 +14,16 @@ void merge(vector<int>& A, int m, vector<int>& B, int n) {
     while(i >= 0 && j >= 0) {
         if(A[i] >= B[j]) {
             A[idx--] = A[i--];
-        } 
+        } else {
+            A[idx--] = B[j--];
+        }
+    }
+    while(j >= 0) {
+        A[idx--] = B[j--];
+    }
+}
+
+
 
 
 int main() {
