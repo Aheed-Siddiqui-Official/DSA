@@ -23,7 +23,19 @@ void merge(vector<int>& A, int m, vector<int>& B, int n) {
     }
 }
 
+                                        // NEXT PERMUTATION PROBLEM
 
+void nextPermutation(vector<int>& A) {
+        int pivot = -1;
+        int n = A.size();
+        for(int i = n-2; i>=0 ; i--) {
+            if(A[i] < A[i+1]) {
+                pivot = i;
+                break;
+            }
+        }
+        
+    }
 
 
 int main() {
