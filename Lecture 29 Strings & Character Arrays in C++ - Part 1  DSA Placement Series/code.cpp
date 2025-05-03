@@ -50,6 +50,16 @@ int main() {
     // cout << str1 + str2 << endl;
     // cout << (str1 == str2) << endl;
     // cout << (str1 < str2) << endl;
+    // cout << (str1 > str2) << endl;
+    // cout << str1.length() << endl;
+
+                                            // INPUT AND OUTPUT IN STRINGS
+
+    // string str;
+    // getline(cin, str);// Get line used because cin removes words after white spaces
+
+    // cout << "output : " << str << endl;
+
 
     
     return 0;
