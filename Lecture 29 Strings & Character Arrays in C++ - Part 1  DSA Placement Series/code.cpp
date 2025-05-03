@@ -14,6 +14,18 @@ int main() {
     // cout << str[2] << endl;
     // cout << str1;
 
+                                            // INPUT AND OUTPUT IN CHAR
 
+    // char str2[7];
+
+    // cout << "Enter char array : ";
+    // cin.getline(str2, 100);
+
+    // for(char ch : str2) {
+    //     cout << ch << " ";
+    // }
+
+
+    
     return 0;
 }
