@@ -25,6 +25,23 @@ int main() {
     //     cout << ch << " ";
     // }
 
+                                            // LENGTH OF ARRAY
+
+    // char str3[] = {"iam mas"};
+    // int leng = 0;
+
+    // for(int i = 0 ; i < str3[i] != '\0' ; i++) {
+    //     leng++;
+    // }
+
+    // cout << leng;
+    
+                                            // STRING CLASS AND LIBRARY IN CPP
+
+    // string str = "MAS";// Strings are dynamic in nature because they resize at runtime but we cant do this with char like arr is also like char so we use vector instead of arr for dynamic purpose
+
+    //cout << str;
+
 
     
     return 0;
