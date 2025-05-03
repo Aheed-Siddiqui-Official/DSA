@@ -42,6 +42,14 @@ int main() {
 
     //cout << str;
 
+                                            // OPERATORS IN STRINGS
+
+    // string str1 = "MAS";
+    // string str2 = "AAS";
+
+    // cout << str1 + str2 << endl;
+    // cout << (str1 == str2) << endl;
+    // cout << (str1 < str2) << endl;
 
     
     return 0;
