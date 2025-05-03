@@ -60,7 +60,16 @@ int main() {
 
     // cout << "output : " << str << endl;
 
+    // for(char ch:str) {
+    //     cout << ch << " ";
+    // }
 
+                                            // REVERSAL QUESTION
+                                            // IN STRING
+
+    string str = "mas";
+    reverse(str.begin(), str.end());
+    cout << str;
     
     return 0;
 }
