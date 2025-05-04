@@ -15,6 +15,13 @@ using namespace std;
 //         return false;
 // }
 
+// bool isPalindrome(string s) {
+//     int st = 0, end = s.length() - 1;
+
+//     while(st < end) {
+//         if(!isAlphaNum(s[st])) {
+//             st++;
+//         }
 
 
 int main() {
