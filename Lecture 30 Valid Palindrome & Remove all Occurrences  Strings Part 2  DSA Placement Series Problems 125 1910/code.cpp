@@ -3,6 +3,14 @@
 using namespace std;
 
 
+                                    // isPalindrome Question
+
+// isalnum() is spp function used to find string is alpha numeric or not
+
+// bool isAlphaNum(char ch) {
+//     if((ch >= '0' && ch <='9') || 
+//         (tolower(ch) >= 'a' && tolower(ch) <= 'z')) {
+
 
 int main() {
                                     // isPalindrome Question
