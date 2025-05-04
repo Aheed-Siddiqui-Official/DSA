@@ -29,6 +29,12 @@ using namespace std;
 //             return false;
 //         }
 
+//         st++;end--;
+//     }
+//     return true;
+// }
+
+
 
 int main() {
                                     // isPalindrome Question
