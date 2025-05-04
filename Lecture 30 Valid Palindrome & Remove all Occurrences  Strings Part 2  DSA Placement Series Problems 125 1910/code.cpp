@@ -22,6 +22,12 @@ using namespace std;
 //         if(!isAlphaNum(s[st])) {
 //             st++;
 //         }
+//         if(!isAlphaNum(s[end])) {
+//             end--;
+//         }
+//         if(tolower(s[st]) != tolower(s[end])) {
+//             return false;
+//         }
 
 
 int main() {
