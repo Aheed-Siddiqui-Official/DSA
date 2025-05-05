@@ -27,7 +27,9 @@ bool checkInclusion(string s1, string s2) {
             windFreq[s2[idx] - 'a']++;
             windIdx; idx++;
         }
-        
+        if(isFreqSame(freq, windFreq)) {
+            return true;
+        }
     }
     return false;
 }
