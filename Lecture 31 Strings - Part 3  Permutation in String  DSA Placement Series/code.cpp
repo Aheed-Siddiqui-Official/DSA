@@ -23,7 +23,13 @@ bool checkInclusion(string s1, string s2) {
         int windIdx = 0, idx = i;
         int windFreq[26] = {0};
 
+        while(windIdx < windSize && idx < s2.length()) {
+            windFreq[s2[idx] - 'a']++;
+            windIdx; idx++;
+        }
         
+    }
+    return false;
 }
 
 int main() {
