@@ -17,7 +17,14 @@ bool checkInclusion(string s1, string s2) {
         freq[s1[i] - 'a']++;
     }
 
-    
+    int windSize = s1.length();
+
+    for(int i=0 ; i<s2.length() ; i++) {
+        int windIdx = 0, idx = i;
+        int windFreq[26] = {0};
+
+        
+}
 
 int main() {
                                         // PERMUTATION IN STRING
