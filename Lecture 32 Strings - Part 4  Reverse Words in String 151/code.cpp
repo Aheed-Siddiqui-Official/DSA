@@ -17,7 +17,11 @@ string reverseWords(string s) {
         }
         reverse(word.begin(), word.end());
 
-        
+        if(word.length() > 0) {
+            ans += " " + word;
+        }
+    }
+    return ans.substr(1);
 }
 
 int main() {
