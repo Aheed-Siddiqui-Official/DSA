@@ -15,7 +15,12 @@ int compress(vector<char>& chars) {
             i++;
         }
 
-        
+        if(count == 1) {
+            chars[idx++] = ch;
+        } else {
+            chars[idx++] = ch;
+            string str = to_string(count);
+            
 }
 
 int main() {
