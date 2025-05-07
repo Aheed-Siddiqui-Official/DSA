@@ -20,7 +20,14 @@ int compress(vector<char>& chars) {
         } else {
             chars[idx++] = ch;
             string str = to_string(count);
-            
+            for(char dig : str) {
+                chars[idx++] = dig;
+            }
+        }
+        i--;
+    }
+    chars.resize(idx);
+    return idx;
 }
 
 int main() {
