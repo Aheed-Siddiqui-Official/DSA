@@ -21,6 +21,15 @@ int nFact(int n) {
     return n * nFact(n-1);
 }
 
+                                        // SUM OF N NUMBERS
+
+int sum(int n) {
+    if(n==1) {
+        return 1;
+    }
+
+    return n + sum(n-1);
+}
 
 int main() {
     // printNum(10);
