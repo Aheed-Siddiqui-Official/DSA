@@ -12,6 +12,14 @@ using namespace std;
 //     printNum(n-1);
 // }
 
+                                        // N FACTORIAL
+
+int nFact(int n) {
+    if(n==1) { // Base case is smallest value
+        return 1;
+    }
+    return n * nFact(n-1);
+}
 
 
 int main() {
