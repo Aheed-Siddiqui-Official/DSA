@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+                                        // PRINT NUM FROM N TO 1
+
+// void printNum(int n) { // recursive function
+//     if(n==1){
+//         cout << n;
+//         return;
+//     }
+//     cout<<n<<" ";
+//     printNum(n-1);
+// }
+
 
 
 int main() {
