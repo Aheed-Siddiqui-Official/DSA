@@ -20,7 +20,25 @@ bool isSorted(vector <int> arr, int n) {
     return arr[n-1] >= arr[n-2] && isSorted(arr, n-1);
 }
 
+                                        // BINARY SEARCH
 
+int binSearch(vector <int> arr, int target, int st, int end) {
+    int mid = st+(end-st)/2;
+
+    if(st<=end) {
+        if(arr[mid] == target) {
+            return mid;
+        } else if(arr[mid] <= target) {
+            return binSearch(arr, target, mid+1, end);
+        } else {
+            return binSearch(arr, target, st, mid-1);
+        }
+    } else {
+        return -1;
+    }
+
+    
+} 
 
 int main() {
     // cout<<fib(6);
