@@ -11,6 +11,15 @@ int fib(int n) {
     return fib(n-1) + fib(n-2);
 }
 
+                                        // SORTED ARRAY
+
+bool isSorted(vector <int> arr, int n) {
+    if(n==0 || n==1) {
+        return true;
+    }
+    return arr[n-1] >= arr[n-2] && isSorted(arr, n-1);
+}
+
 
 
 int main() {
