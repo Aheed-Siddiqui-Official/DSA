@@ -2,3 +2,17 @@
 #include <vector>
 using namespace std;
 
+
+
+int main() {
+    // cout<<fib(6);
+    
+    vector <int> arr = {-5, -2, -1, 0, 1, 2, 3, 4 ,5, 8, 9, 11};
+    // cout<<isSorted(arr, arr.size());
+
+    int target = 4;
+    int st = 0;
+    int end = arr.size()-1;
+    cout<<binSearch(arr, target, st, end);
+    return 0;
+}
