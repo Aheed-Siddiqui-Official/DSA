@@ -12,7 +12,12 @@ void printSubsets(vector <int> &arr, vector <int> &ans, int i) {
     }
 
     //include
-    
+    ans.push_back(arr[i]);
+    printSubsets(arr, ans, i+1);
+
+    ans.pop_back(); // backtrack
+    //exclude
+    printSubsets(arr, ans, i+1);
 }
 
 int main() {
