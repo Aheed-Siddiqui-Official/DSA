@@ -63,4 +63,30 @@ public:
         table[index] = key;
     }
 
-    
+    void display() {
+        for (int i = 0; i < size; i++) {
+            cout << i << ": " << (table[i].empty() ? "EMPTY" : table[i]) << endl;
+        }
+    }
+};
+
+int main() {
+    int N;
+    cout << "Enter the number of courses: ";
+    cin >> N;
+
+    HashTable hashTable(N);
+
+    cout << "Enter the course titles:" << endl;
+    for (int i = 0; i < N; i++) {
+        string course;
+        cin.ignore(); // To ignore the newline character from previous input
+        getline(cin, course);
+        hashTable.insert(course);
+    }
+
+    cout << "Hash table contents:" << endl;
+    hashTable.display();
+
+    return 0;
+}
