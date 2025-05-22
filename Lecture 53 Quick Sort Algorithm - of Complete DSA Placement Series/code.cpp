@@ -25,3 +25,42 @@ int nextPrime(int n) {
     return n;
 }
 
+// Hash table class
+class HashTable {
+private:
+    vector<string> table;
+    int size;
+    int hash1(const string &key) {
+        int hash = 0;
+        for (char ch : key) {
+            hash = (hash * 31 + ch) % size;
+        }
+        return hash;
+    }
+    int hash2(const string &key) {
+        int hash = 0;
+        for (char ch : key) {
+            hash = (hash * 17 + ch) % size;
+        }
+        return (hash % size) + 1; // Ensure non-zero step size
+    }
+
+public:
+    HashTable(int n) : size(nextPrime(n)), table(size, "") {}
+
+    void insert(const string &key) {
+        int index = hash1(key);
+        int step = hash2(key);
+        int originalIndex = index;
+
+        while (!table[index].empty()) {
+            index = (index + step) % size;
+            if (index == originalIndex) {
+                cout << "Hash table is full, cannot insert: " << key << endl;
+                return;
+            }
+        }
+        table[index] = key;
+    }
+
+    
