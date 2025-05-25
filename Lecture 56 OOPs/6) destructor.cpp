@@ -15,4 +15,15 @@ public:
         *cgpaPtr = cgpa;
     }
 
-    
+    ~Student() {
+        cout << "Destructor" << endl;
+        //how to delete dynamic memory
+        delete cgpaPtr;
+    }
+
+    void getInfo() {
+        cout << "name : " << name << endl;
+        cout << "cgpa : " << *cgpaPtr << endl;
+    }
+};
+
