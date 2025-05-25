@@ -27,3 +27,9 @@ public:
     }
 };
 
+int main() {
+    Student s1("mas", 12.32);
+    s1.getInfo();
+
+    return 0;
+}
