@@ -19,4 +19,21 @@ public:
         cout << "child class" << endl;
     }
 
-    
+    void virtual virtfunc() {
+        cout << "child virtual function" << endl;
+    }
+};
+
+int main() {
+    //runtime polymorphism, function overriding
+    Parent p1;
+    Child c1;
+    c1.show();
+    p1.show();
+
+    //virtual function same as function overriding
+    //dynamic in nature
+    //called during runtime
+    c1.virtfunc();
+    return 0;
+}
