@@ -9,3 +9,9 @@ void func() {
     x++;
 };
 
+int main() {
+    func();
+    func();
+    func();
+    return 0;
+}
