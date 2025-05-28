@@ -12,3 +12,17 @@ public:
         next = NULL;
     }
 };
+
+class List {
+    Node* head;
+    Node* tail;
+
+public:
+    List() {
+        head = tail = NULL;
+    }
+};
+
+int main() {
+    return 0;
+}
