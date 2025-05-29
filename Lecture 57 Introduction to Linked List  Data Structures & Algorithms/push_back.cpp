@@ -36,4 +36,24 @@ public:
         }
     }
 
-    
+    //Print a ll
+    void printLL() {
+        Node* temp = head;
+
+        while(temp != NULL) {
+            cout << temp->data << "->";
+            temp = temp->next;
+        }
+        cout << "NULL" << endl;
+    }
+};
+
+int main() {
+    List ll;
+
+    ll.push_back(4);
+    ll.push_back(5);
+
+    ll.printLL();
+    return 0;
+}
