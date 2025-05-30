@@ -65,4 +65,29 @@ public:
         }
     }
 
-    
+    //Print a ll
+    void printLL() {
+        Node* temp = head;
+
+        while(temp != NULL) {
+            cout << temp->data << "->";
+            temp = temp->next;
+        }
+        cout << "NULL" << endl;
+    }
+};
+
+int main() {
+    List ll;
+
+    ll.push_front(3);
+    ll.push_front(2);
+    ll.push_front(1);
+
+    ll.printLL();
+
+    ll.insert(4, 0);
+
+    ll.printLL();
+    return 0;
+}
