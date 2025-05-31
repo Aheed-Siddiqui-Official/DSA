@@ -11,3 +11,11 @@ using namespace std;
         ListNode(int x, ListNode *next) : val(x), next(next) {}
     };
  
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = NULL;
+        ListNode* curr = head;
+        ListNode* next = NULL;
+
+        
