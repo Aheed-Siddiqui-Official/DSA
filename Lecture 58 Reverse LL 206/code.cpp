@@ -25,4 +25,11 @@ public:
             prev = curr;
             curr = next;
         }
-        
+        return prev;
+    }
+};
+
+int main() {
+    cout << "MAS";
+    return 0;
+}
