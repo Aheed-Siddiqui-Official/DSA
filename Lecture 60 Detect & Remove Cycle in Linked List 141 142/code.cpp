@@ -46,3 +46,19 @@ public:
                 break;
             }
         }
+        if(!isCycle) {
+            return NULL;
+        }
+
+        slow = head;
+        while(slow != fast) {
+            slow = slow->next;
+            fast = fast->next;
+        }
+
+        return slow;
+    }
+};
+
+                                    // Program to remove the cycle
+
