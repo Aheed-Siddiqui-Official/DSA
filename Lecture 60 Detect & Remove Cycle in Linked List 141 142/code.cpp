@@ -82,4 +82,20 @@ public:
             return NULL;
         }
 
-        
+        slow = head;
+        ListNode* prev = NULL;// initializing previous pointer to store fast previous value
+        while(slow != fast) {
+            slow = slow->next;
+            prev = fast;// putting fast previous value 
+            fast = fast->next;
+        }
+
+        prev->next = NULL;// breaking the cycle by pointing previous to null
+
+        return slow;
+    }
+};
+
+int main() {
+    return 0;
+}
