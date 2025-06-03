@@ -50,4 +50,28 @@ public:
         temp->prev = NULL;
     }
 
+    void print() {
+        Node* temp = head;
+
+        while(temp != NULL) {
+            cout << temp->data << "<=>";
+            temp = temp->next;
+        }
+        cout << "NULL\n";
+    }
+};
+
+int main() {
+    DoublyList dll;
+
+    dll.push_front(1);
+    dll.push_front(2);
+    dll.push_front(3);
     
+    dll.print();
+
+    dll.pop_back();
+
+    dll.print();
+    return 0;
+}
