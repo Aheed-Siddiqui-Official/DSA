@@ -61,3 +61,17 @@ public:
     }
 };
 
+int main() {
+    DoublyList dll;
+
+    dll.push_front(1);
+    dll.push_front(2);
+    dll.push_front(3);
+    
+    dll.print();
+
+    dll.pop_front();
+
+    dll.print();
+    return 0;
+}
