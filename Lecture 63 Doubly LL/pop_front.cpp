@@ -34,3 +34,19 @@ public:
         }
     }
 
+    void pop_front() {
+        if(head == NULL) {
+            cout << "DLL is empty" << endl;
+            return;
+        }
+
+        Node* temp = head;
+        head = head->next;
+
+        if(head != NULL) {
+            head->prev = NULL;
+        }
+            temp->next = NULL;
+            delete temp;
+    }
+
