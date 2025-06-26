@@ -34,3 +34,28 @@ public:
         }
     }
 
+    void print() {
+        if(head == NULL) return;
+
+        cout << head->data << "->";
+
+        Node*temp = head->next;
+        while(temp != head) { // written head instead of NULL to avoid infinite loop
+            cout << temp->data << "->";
+            temp = temp->next;
+        }
+
+        cout << temp->data << endl;
+    }
+};
+
+int main() {
+    CircularList cll;
+
+    cll.insertNode(1);
+    cll.insertNode(2);
+    cll.insertNode(3);
+
+    cll.print();
+    return 0;
+}
