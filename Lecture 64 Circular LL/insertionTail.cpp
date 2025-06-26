@@ -12,3 +12,25 @@ public:
     }
 };
 
+class CircularList {
+    Node* head;
+    Node* tail;
+
+public:
+    CircularList() {
+        head = tail = NULL;
+    }
+
+    void insertNode(int val) {
+        Node* newNode = new Node(val);
+
+        if(head == NULL) {
+            head = tail = newNode;
+            tail->next = head;
+        } else {
+            newNode-> next = head;
+            tail->next = newNode;
+            tail = newNode;
+        }
+    }
+
