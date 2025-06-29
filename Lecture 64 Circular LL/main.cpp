@@ -12,3 +12,17 @@ public:
     }
 };
 
+class CircularList {
+    Node* head;
+    Node* tail;
+
+public:
+    CircularList() {
+        head = tail = NULL;
+    }
+};
+
+int main() {
+    CircularList cll;
+    return 0;
+}
