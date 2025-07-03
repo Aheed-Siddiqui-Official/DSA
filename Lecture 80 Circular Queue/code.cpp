@@ -58,3 +58,23 @@ public:
     }
 
 };
+
+int main () {
+    CircularQueue cq(3);
+
+    cq.push(1);
+    cq.push(2);
+    cq.push(3);
+    cq.pop();
+    cq.push(4);
+    // cq.printArr();
+
+    while(!cq.empty()) {
+        cout << cq.front() << " ";
+        cq.pop();
+    }
+
+    cout << endl;
+    
+    return 0;
+}
