@@ -26,4 +26,35 @@ public:
         }
     }
 
-    
+    void pop() {
+        if(currSize == 0) {
+            cout << "CQ is empty\n";
+            return;
+        } else {
+            f = (f + 1) % cap;
+            currSize--;
+        }
+    }
+
+    int front() {
+        if(currSize == 0) {
+            cout << "CQ is empty\n";
+            return -1;
+        } else {
+            return arr[f];
+        }
+        
+    }
+
+    bool empty() {
+        return currSize == 0;
+    }
+
+    void printArr() {
+        for(int i = 0 ; i < cap ; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+
+};
