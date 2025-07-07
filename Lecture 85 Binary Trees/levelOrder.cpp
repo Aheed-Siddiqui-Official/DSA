@@ -64,3 +64,12 @@ void levelOrder(Node* root) {
     cout << endl;
 }
 
+int main() {
+    vector<int> preorder = {1, 2, -1, -1, 3, 4, -1, -1, 5, -1, -1};
+    
+    Node* root = builtTree(preorder);
+    
+    levelOrder(root);
+    cout << endl;
+    return 0;
+}
