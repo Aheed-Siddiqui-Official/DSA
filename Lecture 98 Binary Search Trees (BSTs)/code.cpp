@@ -36,3 +36,22 @@ Node* buildBST(vector<int> arr) {
     return root;
 }
 
+void inOrder(Node* root){
+    if(root == NULL) {
+        return;
+    }
+
+    inOrder(root->left);
+    cout << root->data << " ";
+    inOrder(root->right);
+}
+
+int main() {
+    vector<int> arr = {3, 2, 1, 5, 6, 4};
+
+    Node* root = buildBST(arr);
+
+    inOrder(root);
+    cout << endl;
+    return 0;
+}
