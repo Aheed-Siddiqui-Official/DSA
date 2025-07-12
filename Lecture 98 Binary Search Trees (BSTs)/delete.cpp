@@ -67,3 +67,45 @@ Node* getInorderSuccessor(Node* root) { // left most node in right subtree
     return root;
 }
 
+Node* delNode(Node* root, int key) {
+    if(root == NULL) {
+        return NULL;
+    }
+
+    if(key < root->data) {
+        root->left = delNode(root->left, key);
+    } else if(key > root->data) {
+        root->right = delNode(root->right, key);
+    } else {
+        if(root->left == NULL) {
+            Node* temp = root -> right;
+            delete root;
+            return temp;
+        } else if(root-> right == NULL) {
+            Node* temp = root->left;
+            delete root;
+            return temp;
+        } else { // 2 children
+            Node* IS = getInorderSuccessor(root->right);
+            root->data = IS->data;
+            root->right = delNode(root->right, IS->data);
+        }
+    }
+    return root;
+}
+
+int main() {
+    vector<int> arr = {3, 2, 1, 5, 6, 4};
+
+    Node* root = buildBST(arr);
+    inOrder(root);
+
+    cout << endl;
+
+    delNode(root, 2);
+
+    cout << "after : " << endl;
+    inOrder(root);
+    cout << endl;
+    return 0;
+}
