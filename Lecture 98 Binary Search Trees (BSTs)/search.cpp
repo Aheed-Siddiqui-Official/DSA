@@ -46,3 +46,25 @@ void inOrder(Node* root){
     inOrder(root->right);
 }
 
+bool search(Node* root, int key) {
+    if(root == NULL) {
+        return false;
+    }
+    if(root->data == key) {
+        return true;
+    }
+    if(key < root->data) {
+        return search(root->left, key);
+    } else {
+        return search(root->right, key);
+    }
+}
+
+int main() {
+    vector<int> arr = {3, 2, 1, 5, 6, 4};
+
+    Node* root = buildBST(arr);
+
+    cout << search(root, 8);
+    return 0;
+}
